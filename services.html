@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Fractional CMO, Brand Strategy and AI Marketing | Sinead Murphy Dublin</title>
+  <meta name="description" content="Fractional CMO services, brand strategy, AI in marketing, digital marketing strategy and website builds. Senior marketing leadership for Irish brands — embedded, accountable, measured by results."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+.svc-hero { background: var(--charcoal); padding-top: calc(var(--nav-h) + 4rem); padding-bottom: 5rem; margin-bottom: -2px; }
+.svc-hero__headline { font-family: var(--serif); font-size: var(--t-display); font-weight: 500; line-height: 1.1; color: var(--white); margin-bottom: 1.25rem; }
+.svc-hero__headline em { font-style: italic; color: var(--rose); }
+.svc-hero__body { font-size: var(--t-body); line-height: 1.75; color: rgba(255,255,255,0.72); max-width: 640px; margin-bottom: 2rem; }
+
+.svc-full { background: var(--ivory); padding: 5rem 0; }
+.svc-full + .svc-full { background: var(--linen); }
+.svc-full--ivory { background: var(--ivory) !important; }
+.svc-full__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.svc-full__inner--flip { direction: rtl; }
+.svc-full__inner--flip > * { direction: ltr; }
+.svc-full__icon { width: 56px; height: 56px; border-radius: var(--r-md); background: var(--charcoal); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; }
+.svc-full__icon svg { width: 26px; height: 26px; fill: none; stroke: var(--rose); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.svc-full h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
+.svc-full__lede { font-size: var(--t-body); line-height: 1.75; color: var(--charcoal); opacity: 0.75; margin-bottom: 1.5rem; }
+.svc-full__includes { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.75rem; }
+.svc-full__includes li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: var(--t-small); color: var(--charcoal); opacity: 0.78; line-height: 1.5; }
+.svc-full__includes li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--rose); flex-shrink: 0; margin-top: 0.45rem; }
+.svc-full__proof { background: var(--charcoal); border-radius: var(--r-lg); padding: 2rem; }
+.svc-full__proof-stat { font-family: var(--serif); font-size: 3.5rem; font-weight: 500; color: var(--rose); line-height: 1; margin-bottom: 0.35rem; }
+.svc-full__proof-label { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 0.35rem; }
+.svc-full__proof-source { font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,0.75); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.svc-full__proof-source:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.svc-full__proof-quote { font-family: var(--serif); font-size: var(--t-h2); font-style: italic; color: rgba(255,255,255,0.75); line-height: 1.45; margin-top: 1rem; }
+
+.anti-agency { background: var(--charcoal); padding: 5rem 0; }
+.anti-agency__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.anti-agency h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--white); line-height: 1.15; margin-top: 1rem; }
+.anti-agency h2 em { font-style: italic; color: var(--rose); }
+.compare-grid { display: flex; flex-direction: column; gap: 0.75rem; }
+.compare-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.compare-cell { background: rgba(255,255,255,0.05); border-radius: var(--r-md); padding: 1.25rem; font-size: var(--t-small); line-height: 1.55; }
+.compare-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem; }
+.compare-cell--bad { color: rgba(255,255,255,0.45); border-left: 2px solid rgba(255,255,255,0.12); }
+.compare-cell--bad .compare-label { color: rgba(255,255,255,0.28); }
+.compare-cell--good { color: rgba(255,255,255,0.85); border-left: 2px solid var(--rose); }
+.compare-cell--good .compare-label { color: var(--rose); }
+
+.svc-cta { background: var(--ivory); padding: 5rem 0; }
+.svc-cta__inner { background: var(--charcoal); border-radius: var(--r-xl); padding: 3.5rem 4rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+.svc-cta h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--white); line-height: 1.2; margin-bottom: 0.75rem; }
+.svc-cta h2 em { font-style: italic; color: var(--rose); }
+.svc-cta p { font-size: var(--t-body); color: rgba(255,255,255,0.55); max-width: 400px; }
+
+@media (max-width: 960px) {
+  .svc-full__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .svc-full__inner--flip { direction: ltr; }
+  .anti-agency__inner { grid-template-columns: 1fr; }
+  .compare-row { grid-template-columns: 1fr; }
+  .svc-cta__inner { grid-template-columns: 1fr; }
+}
+</style>
+  <link rel="canonical" href="https://www.smmarketinggroup.com/services.html"/>
+  <meta name="keywords" content="fractional CMO services Ireland, brand strategy consultant Dublin, AI marketing consultant Ireland, marketing strategy Ireland, digital marketing strategy Dublin, brand repositioning Ireland, CMO services Dublin"/>
+  <meta name="author" content="Sinead Murphy"/>
+  <meta name="geo.region" content="IE-D"/>
+  <meta name="geo.placename" content="Dublin"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.smmarketinggroup.com/services.html"/>
+  <meta property="og:title" content="Fractional CMO Services Dublin | Brand Strategy | AI Marketing | Sinead Murphy"/>
+  <meta property="og:description" content="Fractional CMO, brand strategy, AI in marketing, digital strategy and website builds. Senior marketing leadership without the full-time cost."/>
+  <meta property="og:site_name" content="SM Marketing Group"/>
+  <meta property="og:locale" content="en_IE"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Fractional CMO Services Dublin | Brand Strategy | AI Marketing | Sinead Murphy"/>
+  <meta name="twitter:description" content="Fractional CMO, brand strategy, AI in marketing, digital strategy and website builds. Senior marketing leadership without the full-time cost."/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SM Marketing Group",
+    "description": "Fractional CMO and marketing consultancy providing senior marketing leadership, brand strategy, AI in marketing and digital strategy for ambitious Irish brands.",
+    "url": "https://www.smmarketinggroup.com",
+    "email": "sinead@smmarketinggroup.com",
+    "telephone": "+353-86-770-9150",
+    "founder": {"@type":"Person","name":"Sinead Murphy"},
+    "address": {"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},
+    "areaServed": {"@type":"Country","name":"Ireland"},
+    "serviceType": ["Fractional CMO","Marketing Strategy","Brand Strategy","AI in Marketing","Digital Marketing Strategy","Website Development"],
+    "sameAs": ["https://www.linkedin.com/in/sinead-murphy-6a113415"]
+  }
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="/" class="nav__logo" aria-label="SM Marketing home">
+      <img src="data:image/png;base64,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" alt="SM Marketing"/>
+    </a>
+    <ul class="nav__links">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/services.html" style="color:var(--rose)">Services</a></li>
+      <li><a href="/results.html">Results</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="https://linkedin.com/in/sinead-murphy-6a113415" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="/contact.html" class="nav-cta">Book a conversation</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobileNav" aria-hidden="true">
+  <ul>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/services.html">Services</a></li>
+    <li><a href="/results.html">Results</a></li>
+    <li><a href="https://linkedin.com/in/sinead-murphy-6a113415" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+  <a href="/contact.html" class="btn-primary">Book a conversation</a>
+</div>
+
+<main id="main-content">
+<section class="svc-hero">
+  <div class="container reveal">
+    <span class="eyebrow">Services</span>
+    <h1 class="svc-hero__headline">Everything you need. <em>Nothing you don't.</em></h1>
+    <p class="svc-hero__body">Senior marketing leadership, brand strategy, AI implementation, digital and content, and website builds. Each service is delivered at C-suite level, embedded in your business, and measured by commercial outcomes from day one.</p>
+    <a href="/contact.html" class="btn-primary">Book a conversation</a>
+  </div>
+</section>
+<div class="cred-strip">
+  <div class="container">
+    <div class="cred-strip__inner">
+      <div class="cred-item"><span class="cred-item__dot"></span>20+ Years Senior Marketing Leadership</div>
+      <div class="cred-item"><span class="cred-item__dot"></span>Hines European ESG Award Winner</div>
+      <div class="cred-item"><span class="cred-item__dot"></span>BREEAM Outstanding &mdash; Only Irish Retail Centre</div>
+      <div class="cred-item"><span class="cred-item__dot"></span>Aer Arann to Aer Lingus Regional Rebrand</div>
+      <div class="cred-item"><span class="cred-item__dot"></span>Retail &nbsp;|&nbsp; Aviation &nbsp;|&nbsp; Telecoms &nbsp;|&nbsp; FMCG</div>
+    </div>
+  </div>
+</div>
+<section class="svc-full">
+  <div class="container">
+    <div class="svc-full__inner reveal">
+      <div>
+        <div class="svc-full__icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+        <h2>Fractional CMO</h2>
+        <p class="svc-full__lede">C-suite marketing leadership without the full-time cost. Embedded in your business, present at commercial reviews, accountable for outcomes. You get a senior marketing leader who treats your business as their own.</p>
+        <ul class="svc-full__includes">
+          <li>Marketing strategy aligned to business objectives</li>
+          <li>Present at board and commercial reviews</li>
+          <li>Agency and supplier management</li>
+          <li>Team leadership and capability building</li>
+          <li>KPI framework and monthly reporting</li>
+          <li>Defined days per week or month, scaled to need</li>
+        </ul>
+        <a href="/contact.html" class="btn-ghost-dark">Start the conversation</a>
+      </div>
+      <div class="svc-full__proof">
+        <div class="svc-full__proof-stat">20%</div>
+        <div class="svc-full__proof-label">More footfall</div>
+        <div class="svc-full__proof-source">Turned a retail centre into a destination people choose</div>
+        <div class="svc-full__proof-stat">10yr</div>
+        <div class="svc-full__proof-label">Marketing Director tenure</div>
+        <div class="svc-full__proof-source">Hines / Liffey Valley Shopping Centre</div>
+        <blockquote class="svc-full__proof-quote">"Your business doesn't need another strategy document. It needs a senior marketing leader who is accountable for the outcome."</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="svc-full">
+  <div class="container">
+    <div class="svc-full__inner svc-full__inner--flip reveal">
+      <div>
+        <div class="svc-full__icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h2>Brand strategy and repositioning</h2>
+        <p class="svc-full__lede">A brand that has earned the right to be ambitious needs a strategy that matches that ambition. Repositioning, brand launches, full identity development, and the commercial plan to make it stick.</p>
+        <ul class="svc-full__includes">
+          <li>Brand positioning and messaging architecture</li>
+          <li>Visual identity and brand guidelines</li>
+          <li>Audience strategy and consumer insight</li>
+          <li>Campaign planning and integrated execution</li>
+          <li>Trade and stakeholder communications</li>
+          <li>Brand launch planning and management</li>
+        </ul>
+        <a href="/contact.html" class="btn-ghost-dark">Start the conversation</a>
+      </div>
+      <div class="svc-full__proof">
+        <div class="svc-full__proof-stat">62&rarr;71%</div>
+        <div class="svc-full__proof-label">Premium customer profile</div>
+        <div class="svc-full__proof-source">Attracted a higher-spending audience without losing existing footfall</div>
+        <div class="svc-full__proof-stat">1.4M</div>
+        <div class="svc-full__proof-label">Passengers</div>
+        <div class="svc-full__proof-source">Led a major Irish aviation rebrand across 1.4 million annual passengers</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="svc-full svc-full--ivory">
+  <div class="container">
+    <div class="svc-full__inner reveal">
+      <div>
+        <div class="svc-full__icon"><svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg></div>
+        <h2>AI in marketing</h2>
+        <p class="svc-full__lede">Practical AI implementation that changes how your team works week to week. Not slideware, not a workshop that ends with a certificate. Real capability built inside your marketing function.</p>
+        <ul class="svc-full__includes">
+          <li>AI Adoption Wedge Audit — where AI has the highest impact for your business</li>
+          <li>Team upskilling programmes with measurable output targets</li>
+          <li>AI woven into strategy, content and campaign planning</li>
+          <li>AI-assisted website builds and web presence</li>
+          <li>Content workflow automation and efficiency gains</li>
+          <li>Measurement and reporting frameworks</li>
+        </ul>
+        <a href="/contact.html" class="btn-ghost-dark">Start the conversation</a>
+      </div>
+      <div class="svc-full__proof">
+        
+        <blockquote class="svc-full__proof-quote">"AI in Marketing is an embedded competency, not an add-on. If it does not change the commercial output, it does not count."</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="svc-full">
+  <div class="container">
+    <div class="svc-full__inner svc-full__inner--flip reveal">
+      <div>
+        <div class="svc-full__icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div>
+        <h2>Strategy and planning</h2>
+        <p class="svc-full__lede">Marketing strategy built from the commercial objective, not the channel. Market context, audience insight, clear priorities, and a plan that tells you what you are not doing as clearly as what you are.</p>
+        <ul class="svc-full__includes">
+          <li>Annual marketing strategy and planning</li>
+          <li>Market and competitor analysis</li>
+          <li>Audience segmentation and insight</li>
+          <li>Channel strategy and budget allocation</li>
+          <li>Campaign briefs and agency management</li>
+          <li>Measurement framework and KPI setting</li>
+        </ul>
+        <a href="/contact.html" class="btn-ghost-dark">Start the conversation</a>
+      </div>
+      <div class="svc-full__proof">
+        <div class="svc-full__proof-stat">87&rarr;98m</div>
+        <div class="svc-full__proof-label">Longer in-store</div>
+        <div class="svc-full__proof-source">Longer visits that directly grew retailer revenue</div>
+        <div class="svc-full__proof-stat">10M+</div>
+        <div class="svc-full__proof-label">Visitors a year</div>
+        <div class="svc-full__proof-source">Repositioned one of Dublin's leading out-of-town retail destinations to 10M+ annual visitors</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="anti-agency">
+  <div class="container">
+    <div class="anti-agency__inner reveal">
+      <div>
+        <span class="eyebrow">Why fractional</span>
+        <h2>The senior operator, not the <em>junior account handler.</em></h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-row">
+          <div class="compare-cell compare-cell--bad" style="color:rgba(255,255,255,0.75)"><div class="compare-label">Agency model</div>Pitch with senior talent. Deliver with juniors. No skin in the game.</div>
+          <div class="compare-cell compare-cell--good"><div class="compare-label">SM Marketing</div>You work with Sinead directly. Embedded, present, accountable for the outcome.</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell compare-cell--bad" style="color:rgba(255,255,255,0.75)"><div class="compare-label">Full-time CMO</div>&euro;150&ndash;250k salary plus benefits for a function that does not need five days a week.</div>
+          <div class="compare-cell compare-cell--good"><div class="compare-label">Fractional model</div>Defined days per week or month. C-suite leadership scaled to what the business needs.</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell compare-cell--bad" style="color:rgba(255,255,255,0.75)"><div class="compare-label">Strategy consultant</div>A deck handed over. Nobody builds what was recommended. No follow-through.</div>
+          <div class="compare-cell compare-cell--good"><div class="compare-label">SM Marketing</div>Strategy and execution. Measured by commercial KPIs from day one, not hours billed.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="svc-cta">
+  <div class="container">
+    <div class="svc-cta__inner reveal">
+      <div>
+        <h2>Start with a <em>30-minute conversation.</em></h2>
+        <p>No pitch. No obligation. An honest look at where your brand is, where it should be, and whether there is a fit.</p>
+      </div>
+      <a href="/contact.html" class="btn-primary">Book a conversation</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo"><img src="data:image/png;base64,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" alt="SM Marketing"/></div>
+        <p class="footer__tagline">Sinead Murphy<br>Fractional CMO / Marketing Consultant<br>Dublin, Ireland</p>
+        <a href="https://linkedin.com/in/sinead-murphy-6a113415" target="_blank" rel="noopener" class="footer__linkedin">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigation</div>
+        <ul class="footer__nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/results.html">Results</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Get in touch</div>
+        <p class="footer__contact-line">
+          <a href="mailto:sinead@smmarketinggroup.com">sinead@smmarketinggroup.com</a><br>
+          <a href="tel:+353860770-9150">086-770-9150</a><br>
+          <a href="https://linkedin.com/in/sinead-murphy-6a113415" target="_blank" rel="noopener">LinkedIn Profile</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 SM Marketing Group. All rights reserved.</p>
+      <p>Dublin, Ireland</p>
+    </div>
+  </div>
+</footer>
+<script>
+  const obs = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    mobileNav.setAttribute('aria-hidden', !isOpen);
+  });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    mobileNav.setAttribute('aria-hidden', true);
+  }));
+</script>
+</body>
+</html>
