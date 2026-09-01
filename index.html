@@ -350,10 +350,12 @@
         <h2>Start with a <em>30-minute strategy conversation.</em></h2>
         <p class="contact-cta__sub">No pitch. No obligation. A short, direct conversation about where your brand is, where it should be, and whether there is a fit.</p>
       </div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+      <form class="contact-form" action="https://formspree.io/f/xljebern" method="POST">
         <input type="text"  name="name"      placeholder="Your name"    required/>
         <input type="text"  name="company"   placeholder="Company"      required/>
-        <input type="email" name="email"      placeholder="Email address" required/>
+        <input type="email" name="_replyto"   placeholder="Email address" required/>
+          <input type="hidden" name="_subject" value="New enquiry from SM Marketing website"/>
+          <input type="hidden" name="_next" value="https://www.smmarketinggroup.com/#contact"/>
         <textarea           name="challenge"  placeholder="One sentence on your marketing challenge"></textarea>
         <button type="submit" class="btn-primary" style="align-self:flex-start;border:none;cursor:pointer;">Send message</button>
         <p class="contact-form__note">30 minutes &nbsp;|&nbsp; No charge &nbsp;|&nbsp; No obligation</p>
@@ -425,13 +427,7 @@
     mobileNav.setAttribute('aria-hidden', true);
   }));
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type=submit]');
-    btn.textContent = 'Message sent';
-    btn.style.background = 'var(--charcoal)';
-    btn.disabled = true;
-  }
+
 </script>
 </body>
 </html>
