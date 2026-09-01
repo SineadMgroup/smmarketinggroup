@@ -135,10 +135,12 @@
       <div class="contact-form-wrap">
         <h2>Send a message</h2>
         <p>Fill in the form and Sinead will come back to you within one business day.</p>
-        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xljebern" method="POST">
           <input type="text"  name="name"      placeholder="Your name"           required/>
           <input type="text"  name="company"   placeholder="Company"             required/>
-          <input type="email" name="email"      placeholder="Email address"       required/>
+          <input type="email" name="_replyto"   placeholder="Email address"       required/>
+          <input type="hidden" name="_subject" value="New enquiry from SM Marketing website"/>
+          <input type="hidden" name="_next" value="https://www.smmarketinggroup.com/contact.html"/>
           <input type="tel"   name="phone"      placeholder="Phone (optional)"/>
           <select name="service">
             <option value="" disabled selected>What are you interested in?</option>
@@ -187,17 +189,7 @@
     </div>
   </div>
 </section>
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type=submit]');
-    const success = document.getElementById('formSuccess');
-    btn.textContent = 'Message sent';
-    btn.style.background = 'var(--charcoal)';
-    btn.disabled = true;
-    success.style.display = 'block';
-  }
-</script>
+
 </main>
 
 <footer class="footer">
