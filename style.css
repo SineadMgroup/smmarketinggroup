@@ -735,10 +735,20 @@ a   { color: inherit; text-decoration: none; }
   .nav__links  { display: none; }
   .nav__hamburger { display: flex; }
 
-  .hero__inner { grid-template-columns: 1fr; }
-  .hero__photo-wrap { padding: 2rem 0 0; }
-  .hero__photo-frame { width: 240px; }
-  .hero__photo { width: 240px; }
+  .hero__inner {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero__photo-wrap {
+    padding: 1.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__photo-frame { width: 200px; }
+  .hero__photo { width: 200px; }
+  .hero__content { padding-bottom: 1rem; }
 
   .positioning__inner { grid-template-columns: 1fr; gap: 2rem; }
   .ai-section__inner  { grid-template-columns: 1fr; }
