@@ -9,15 +9,17 @@ Static HTML/CSS website for SM Marketing Group. Built for GitHub Pages deploymen
 | File | Purpose |
 |------|---------|
 | `index.html` | Homepage |
-| `about.html` | About page |
-| `services.html` | Services page |
-| `results.html` | Results and case studies |
-| `contact.html` | Contact page |
+| `about.html` | About and career record |
+| `fractional-cmo.html` | Fractional CMO page, with FAQ |
+| `diagnostic.html` | The Diagnostic |
+| `how-i-work.html` | AI team, Unit Check, Sophie |
+| `shopping-centre-checklist.html` | Free checklist and PDF download form |
+| `contact.html` | Booking link and enquiry form |
+| `privacy.html` | Privacy notice |
+| `services.html`, `results.html` | Redirect stubs (noindex) to the pages above |
 | `style.css` | Shared stylesheet |
-| `sitemap.xml` | XML sitemap for search engines |
-| `robots.txt` | Search engine crawl instructions |
-| `llms.txt` | AI engine readability file |
-| `.nojekyll` | Disables Jekyll processing on GitHub Pages |
+| `images/` | Logos, photo, checklist preview, social share card |
+| `sitemap.xml`, `robots.txt`, `llms.txt` | Search engine and AI crawler files |
 | `CNAME` | Custom domain configuration |
 
 ## Deployment
