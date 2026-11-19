@@ -168,6 +168,8 @@
             <option value="" disabled selected>What are you interested in?</option>
             <option>The Diagnostic</option>
             <option>Fractional CMO</option>
+            <option>Unit Check</option>
+            <option>Sophie, social media</option>
             <option>Something else</option>
           </select>
           <select name="heard_from" required>
@@ -206,6 +208,7 @@
   </div>
 </section>
 <script>
+  (function(){var p=new URLSearchParams(location.search).get("interest"),m={"unit-check":"Unit Check","sophie":"Sophie, social media"};if(p&&m[p]){var s=document.querySelector('select[name=interest]');if(s)s.value=m[p];}})();
 (function(){
   var f=document.getElementById('enqForm'),d=document.getElementById('enqDone'),e=document.getElementById('enqError');
   f.addEventListener('submit',function(ev){
@@ -236,6 +239,7 @@
           <li><a href="/about.html">About</a></li>
           <li><a href="/diagnostic.html">Diagnostic</a></li>
           <li><a href="/fractional-cmo.html">Fractional CMO</a></li>
+          <li><a href="/how-i-work.html">How I work</a></li>
           <li><a href="/shopping-centre-checklist.html">Free checklist</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
