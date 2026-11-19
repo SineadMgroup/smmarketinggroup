@@ -3,20 +3,80 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book a Conversation | Fractional CMO Dublin | Sinead Murphy</title>
-  <meta name="description" content="Book a 30-minute strategy conversation with Sinead Murphy, Fractional CMO Dublin. No pitch, no obligation. Works with ambitious Irish brands across retail, destinations, aviation and telecoms."/>
+  <title>Book a Call | Fractional CMO Dublin | Sinead Murphy</title>
+  <meta name="description" content="Book a 30 minute conversation with Sinead Murphy, fractional CMO for founder led brands in Ireland, or send a message. Replies within one working day."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
   <style>
-.contact-hero { background: var(--charcoal); padding-top: calc(var(--nav-h) + 4rem); padding-bottom: 5rem; margin-bottom: -2px; }
-.contact-hero__headline { font-family: var(--serif); font-size: var(--t-display); font-weight: 500; line-height: 1.1; color: var(--white); margin-bottom: 1.25rem; }
-.contact-hero__headline em { font-style: italic; color: var(--rose); }
-.contact-hero__body { font-size: var(--t-body); line-height: 1.75; color: rgba(255,255,255,0.72); max-width: 560px; }
+.svc-hero { background: var(--charcoal); padding-top: calc(var(--nav-h) + 4rem); padding-bottom: 5rem; margin-bottom: -2px; }
+.svc-hero__headline { font-family: var(--serif); font-size: var(--t-display); font-weight: 500; line-height: 1.1; color: var(--white); margin-bottom: 1.25rem; }
+.svc-hero__headline em { font-style: italic; color: var(--rose); }
+.svc-hero__body { font-size: var(--t-body); line-height: 1.75; color: rgba(255,255,255,0.72); max-width: 640px; margin-bottom: 2rem; }
 
-.contact-main { background: var(--ivory); padding: 5rem 0; }
-.contact-main__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.svc-full { background: var(--ivory); padding: 5rem 0; }
+.svc-full + .svc-full { background: var(--linen); }
+.svc-full--ivory { background: var(--ivory) !important; }
+.svc-full__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.svc-full__inner--flip { direction: rtl; }
+.svc-full__inner--flip > * { direction: ltr; }
+.svc-full__icon { width: 56px; height: 56px; border-radius: var(--r-md); background: var(--charcoal); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; }
+.svc-full__icon svg { width: 26px; height: 26px; fill: none; stroke: var(--rose); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.svc-full h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
+.svc-full__lede { font-size: var(--t-body); line-height: 1.75; color: var(--charcoal); opacity: 0.75; margin-bottom: 1.5rem; }
+.svc-full__includes { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.75rem; }
+.svc-full__includes li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: var(--t-small); color: var(--charcoal); opacity: 0.78; line-height: 1.5; }
+.svc-full__includes li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--rose); flex-shrink: 0; margin-top: 0.45rem; }
+.svc-full__proof { background: var(--charcoal); border-radius: var(--r-lg); padding: 2rem; }
+.svc-full__proof-stat { font-family: var(--serif); font-size: 3.5rem; font-weight: 500; color: var(--rose); line-height: 1; margin-bottom: 0.35rem; }
+.svc-full__proof-label { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 0.35rem; }
+.svc-full__proof-source { font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,0.75); margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.svc-full__proof-source:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.svc-full__proof-quote { font-family: var(--serif); font-size: var(--t-h2); font-style: italic; color: rgba(255,255,255,0.75); line-height: 1.45; margin-top: 1rem; }
+
+.anti-agency { background: var(--charcoal); padding: 5rem 0; }
+.anti-agency__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.anti-agency h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--white); line-height: 1.15; margin-top: 1rem; }
+.anti-agency h2 em { font-style: italic; color: var(--rose); }
+.compare-grid { display: flex; flex-direction: column; gap: 0.75rem; }
+.compare-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.compare-cell { background: rgba(255,255,255,0.05); border-radius: var(--r-md); padding: 1.25rem; font-size: var(--t-small); line-height: 1.55; }
+.compare-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.4rem; }
+.compare-cell--bad { color: rgba(255,255,255,0.45); border-left: 2px solid rgba(255,255,255,0.12); }
+.compare-cell--bad .compare-label { color: rgba(255,255,255,0.28); }
+.compare-cell--good { color: rgba(255,255,255,0.85); border-left: 2px solid var(--rose); }
+.compare-cell--good .compare-label { color: var(--rose); }
+
+.svc-cta { background: var(--ivory); padding: 5rem 0; }
+.svc-cta__inner { background: var(--charcoal); border-radius: var(--r-xl); padding: 3.5rem 4rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+.svc-cta h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--white); line-height: 1.2; margin-bottom: 0.75rem; }
+.svc-cta h2 em { font-style: italic; color: var(--rose); }
+.svc-cta p { font-size: var(--t-body); color: rgba(255,255,255,0.55); max-width: 400px; }
+
+@media (max-width: 960px) {
+  .svc-full__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .svc-full__inner--flip { direction: ltr; }
+  .anti-agency__inner { grid-template-columns: 1fr; }
+  .compare-row { grid-template-columns: 1fr; }
+  .svc-cta__inner { grid-template-columns: 1fr; }
+}
+</style>
+  <link rel="canonical" href="https://www.smmarketinggroup.com/contact.html"/>
+  <meta name="keywords" content="fractional CMO services Ireland, brand strategy consultant Dublin, AI marketing consultant Ireland, marketing strategy Ireland, digital marketing strategy Dublin, brand repositioning Ireland, CMO services Dublin"/>
+  <meta name="author" content="Sinead Murphy"/>
+  <meta name="geo.region" content="IE-D"/>
+  <meta name="geo.placename" content="Dublin"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.smmarketinggroup.com/contact.html"/>
+  <meta property="og:title" content="Book a call | Sinead Murphy"/>
+  <meta property="og:description" content="Book a 30 minute conversation, or send a message. Replies within one working day."/>
+  <meta property="og:site_name" content="SM Marketing Group"/>
+  <meta property="og:locale" content="en_IE"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Book a call | Sinead Murphy"/>
+  <meta name="twitter:description" content="Book a 30 minute conversation, or send a message. Replies within one working day."/>
+  <style>
 .contact-form-wrap { background: var(--white); border: 1px solid var(--border); border-radius: var(--r-xl); padding: 2.5rem; }
 .contact-form-wrap h2 { font-family: var(--serif); font-size: var(--t-h1); font-weight: 500; color: var(--charcoal); margin-bottom: 0.5rem; }
 .contact-form-wrap p { font-size: var(--t-small); color: var(--taupe); margin-bottom: 1.75rem; }
@@ -30,55 +90,17 @@
 .contact-form textarea { height: 110px; }
 .contact-form__note { font-size: 0.82rem; color: var(--taupe); margin-top: 0.25rem; }
 .contact-form__success { display: none; background: rgba(201,168,130,0.15); border: 1px solid var(--rose); border-radius: var(--r-md); padding: 1.25rem; font-size: var(--t-small); color: var(--charcoal); margin-top: 0.5rem; }
-
-.contact-details h3 { font-family: var(--serif); font-size: var(--t-h2); font-weight: 500; color: var(--charcoal); margin-bottom: 1.5rem; }
-.contact-detail-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
-.contact-detail-item__icon { width: 40px; height: 40px; border-radius: var(--r-sm); background: var(--charcoal); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.contact-detail-item__icon svg { width: 18px; height: 18px; fill: none; stroke: var(--rose); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-.contact-detail-item__label { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 0.25rem; }
-.contact-detail-item__value { font-size: var(--t-small); color: var(--charcoal); }
-.contact-detail-item__value a { color: var(--charcoal); border-bottom: 1px solid var(--border); padding-bottom: 1px; transition: border-color 0.2s; }
-.contact-detail-item__value a:hover { border-color: var(--rose); }
-
-.contact-reassurance { background: var(--charcoal); border-radius: var(--r-xl); padding: 2rem; margin-top: 2rem; }
-.contact-reassurance h4 { font-family: var(--serif); font-size: var(--t-h2); font-weight: 500; color: var(--white); margin-bottom: 1rem; }
-.contact-reassurance ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-.contact-reassurance li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: var(--t-small); color: rgba(255,255,255,0.65); line-height: 1.5; }
-.contact-reassurance li::before { content: ''; display: block; width: 5px; height: 5px; border-radius: 50%; background: var(--rose); flex-shrink: 0; margin-top: 0.5rem; }
-
-@media (max-width: 960px) {
-  .contact-main__inner { grid-template-columns: 1fr; }
-}
-</style>
-  <link rel="canonical" href="https://www.smmarketinggroup.com/contact.html"/>
-  <meta name="keywords" content="contact fractional CMO Dublin, hire fractional CMO Ireland, marketing consultant contact Dublin, book fractional CMO"/>
-  <meta name="author" content="Sinead Murphy"/>
-  <meta name="geo.region" content="IE-D"/>
-  <meta name="geo.placename" content="Dublin"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.smmarketinggroup.com/contact.html"/>
-  <meta property="og:title" content="Contact Sinead Murphy | Fractional CMO Dublin"/>
-  <meta property="og:description" content="Book a 30-minute strategy conversation with Sinead Murphy. No pitch, no obligation. Fractional CMO based in Dublin, Ireland."/>
-  <meta property="og:site_name" content="SM Marketing Group"/>
-  <meta property="og:locale" content="en_IE"/>
-  <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="Contact Sinead Murphy | Fractional CMO Dublin"/>
-  <meta name="twitter:description" content="Book a 30-minute strategy conversation with Sinead Murphy. No pitch, no obligation. Fractional CMO based in Dublin, Ireland."/>
+.ck-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:1rem}
+.ck-list li{display:flex;gap:1rem;align-items:flex-start}
+.ck-list .n{font-family:var(--serif);font-size:1.6rem;line-height:1;color:var(--deep-gold,#7E5E3C);min-width:2.2rem}
+.ck-list strong{display:block;color:var(--charcoal)}
+.ck-q{border-left:3px solid var(--rose);background:var(--linen,#EDE3D5);padding:1.1rem 1.4rem;margin:1.5rem 0;font-family:var(--serif);font-size:1.25rem;color:var(--charcoal)}
+.ck-wrap{max-width:560px}
+.ck-done{display:none}
+.ck-done.show{display:block}
+  </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "SM Marketing Group",
-    "description": "Fractional CMO and marketing consultancy providing senior marketing leadership, brand strategy, AI in marketing and digital strategy for ambitious Irish brands.",
-    "url": "https://www.smmarketinggroup.com",
-    "email": "sinead@smmarketinggroup.com",
-    "telephone": "+353-86-770-9150",
-    "founder": {"@type":"Person","name":"Sinead Murphy"},
-    "address": {"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},
-    "areaServed": {"@type":"Country","name":"Ireland"},
-    "serviceType": ["Fractional CMO","Marketing Strategy","Brand Strategy","AI in Marketing","Digital Marketing Strategy","Website Development"],
-    "sameAs": ["https://www.linkedin.com/in/sinead-murphy-6a113415"]
-  }
+  {"@context":"https://schema.org","@type":"ContactPage","name":"Book a call with Sinead Murphy","url":"https://www.smmarketinggroup.com/contact.html"}
   </script>
 </head>
 <body>
@@ -111,86 +133,89 @@
   <a href="/contact.html" class="btn-primary">Book a conversation</a>
 </div>
 
-<main id="main-content">
-<section class="contact-hero">
+<main id="main-content" class="ed">
+<section class="ed-hero">
   <div class="container reveal">
-    <span class="eyebrow">Get in touch</span>
-    <h1 class="contact-hero__headline">Let's talk about <em>your brand.</em></h1>
-    <p class="contact-hero__body">The first step is a 30-minute conversation. No pitch, no obligation. An honest look at where your brand is, where it should be, and whether there is a fit worth exploring.</p>
+    <span class="ed-label">Book a call</span>
+    <h1>Let&#39;s talk about where your sales are <em>stalling.</em></h1>
+    <p>A 30 minute conversation. No pitch, no obligation. I will ask about your business and your buyers, and tell you honestly whether I can help and what the first step would be.</p>
+    <a href="https://calendly.com/sinead-smmarketinggroup/30min" class="ed-link" target="_blank" rel="noopener">Pick a time</a>
   </div>
 </section>
-<div class="cred-strip">
-  <div class="container">
-    <div class="cred-strip__inner">
-      <div class="cred-item"><span class="cred-item__dot"></span>20+ Years Senior Marketing Leadership</div>
-      <div class="cred-item"><span class="cred-item__dot"></span>Hines European ESG Award Winner</div>
-      <div class="cred-item"><span class="cred-item__dot"></span>BREEAM Outstanding &mdash; Only Irish Retail Centre</div>
-      <div class="cred-item"><span class="cred-item__dot"></span>Aer Arann to Aer Lingus Regional Rebrand</div>
-      <div class="cred-item"><span class="cred-item__dot"></span>Retail &nbsp;|&nbsp; Destinations &nbsp;|&nbsp; Aviation &nbsp;|&nbsp; Telecoms</div>
+<section class="ed-sec">
+  <div class="container ed-grid reveal">
+    <div><span class="ed-label">What happens next</span><h2>Three <em>steps.</em></h2></div>
+    <div>
+      <ul class="ed-list">
+        <li><strong>1. You pick a time</strong> or send a message below. I reply within one working day.</li>
+        <li><strong>2. We talk for 30 minutes,</strong> by phone, video or in person in South County Dublin.</li>
+        <li><strong>3. I tell you what I would do.</strong> If the Diagnostic is the right first step, I will say so, with a fee. If it is not, I will say that too.</li>
+      </ul>
     </div>
   </div>
-</div>
-<section class="contact-main">
-  <div class="container">
-    <div class="contact-main__inner reveal">
+</section>
+<section class="ed-sec ed-sec--tint" id="message">
+  <div class="container ed-grid reveal">
+    <div><span class="ed-label">Prefer to write?</span><h2>Send a <em>message.</em></h2><p class="ed-lede" style="margin-top:1rem">I reply within one working day.</p></div>
+    <div class="ck-hero-form">
       <div class="contact-form-wrap">
-        <h2>Send a message</h2>
-        <p>Fill in the form and Sinead will come back to you within one business day.</p>
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xljebern" method="POST">
-          <input type="text"  name="name"      placeholder="Your name"           required/>
-          <input type="text"  name="company"   placeholder="Company"             required/>
-          <input type="email" name="_replyto"   placeholder="Email address"       required/>
-          <input type="hidden" name="_subject" value="New enquiry from SM Marketing website"/>
-          <input type="hidden" name="_next" value="https://www.smmarketinggroup.com/contact.html"/>
-          <input type="tel"   name="phone"      placeholder="Phone (optional)"/>
-          <select name="service">
+        <form class="contact-form" id="enqForm" action="https://formspree.io/f/xljebern" method="POST">
+          <input type="text" name="name" placeholder="Your name" required/>
+          <input type="text" name="company" placeholder="Company" required/>
+          <input type="email" name="email" placeholder="Email address" required/>
+          <input type="tel" name="phone" placeholder="Phone (optional)"/>
+          <select name="interest" required>
             <option value="" disabled selected>What are you interested in?</option>
+            <option>The Diagnostic</option>
             <option>Fractional CMO</option>
-            <option>Brand strategy and repositioning</option>
-            <option>AI in marketing</option>
-            <option>Strategy and planning</option>
-            <option>Digital and content marketing</option>
-            <option>Website and web presence</option>
-            <option>Not sure yet</option>
+            <option>Something else</option>
           </select>
-          <textarea name="challenge" placeholder="One sentence on your marketing challenge or goal"></textarea>
+          <select name="heard_from" required>
+            <option value="" disabled selected>How did you hear about me?</option>
+            <option>LinkedIn</option>
+            <option>An email from me</option>
+            <option>A referral</option>
+            <option>Search</option>
+            <option>The shopping centre checklist</option>
+            <option>Somewhere else</option>
+          </select>
+          <textarea name="message" placeholder="One sentence on what is not working"></textarea>
+          <input type="hidden" name="_subject" value="New enquiry from SM Marketing website"/>
+          <input type="hidden" name="source" value="contact-page"/>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
           <button type="submit" class="btn-primary" style="align-self:flex-start;border:none;cursor:pointer;">Send message</button>
-          <p class="contact-form__note">30 minutes &nbsp;|&nbsp; No charge &nbsp;|&nbsp; No obligation</p>
-          <div class="contact-form__success" id="formSuccess">Thank you. Sinead will be in touch within one business day.</div>
+          <p class="contact-form__note">See the <a href="/privacy.html">privacy notice</a>. No charge, no obligation.</p>
+          <p class="contact-form__note" id="enqError" style="display:none;color:#8a3b2e">Something went wrong. Please email sinead@smmarketinggroup.com.</p>
         </form>
-      </div>
-      <div class="contact-details">
-        <h3>Or reach out directly</h3>
-        <div class="contact-detail-item">
-          <div class="contact-detail-item__icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-          <div><div class="contact-detail-item__label">Email</div><div class="contact-detail-item__value"><a href="mailto:sinead@smmarketinggroup.com">sinead@smmarketinggroup.com</a></div></div>
-        </div>
-        <div class="contact-detail-item">
-          <div class="contact-detail-item__icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
-          <div><div class="contact-detail-item__label">Phone</div><div class="contact-detail-item__value"><a href="tel:+353867709150">086-770-9150</a></div></div>
-        </div>
-        <div class="contact-detail-item">
-          <div class="contact-detail-item__icon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-          <div><div class="contact-detail-item__label">LinkedIn</div><div class="contact-detail-item__value"><a href="https://linkedin.com/in/sinead-murphy-6a113415" target="_blank" rel="noopener">linkedin.com/in/sinead-murphy-6a113415</a></div></div>
-        </div>
-        <div class="contact-detail-item">
-          <div class="contact-detail-item__icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
-          <div><div class="contact-detail-item__label">Location</div><div class="contact-detail-item__value">Dublin, Ireland</div></div>
-        </div>
-        <div class="contact-reassurance">
-          <h4>What to expect</h4>
-          <ul>
-            <li>Response within one business day</li>
-            <li>A short 30-minute conversation to understand your situation</li>
-            <li>No pitch, no pressure, no obligation</li>
-            <li>An honest view on whether there is a fit and what the first step would be</li>
-          </ul>
-        </div>
+        <div class="ck-done" id="enqDone"><h3>Thank you.</h3><p class="ed-lede">I will reply within one working day. If it is urgent, call 086 770 9150.</p></div>
       </div>
     </div>
   </div>
 </section>
-
+<section class="ed-sec">
+  <div class="container ed-grid reveal">
+    <div><span class="ed-label">Or reach me directly</span><h2>Sinead <em>Murphy.</em></h2></div>
+    <div>
+      <ul class="ed-list">
+        <li><strong>Email</strong> &nbsp;<a href="mailto:sinead@smmarketinggroup.com">sinead@smmarketinggroup.com</a></li>
+        <li><strong>Phone</strong> &nbsp;<a href="tel:+353867709150">086 770 9150</a></li>
+        <li><strong>LinkedIn</strong> &nbsp;<a href="https://linkedin.com/in/sinead-murphy-6a113415" target="_blank" rel="noopener">Sinead Murphy</a></li>
+        <li><strong>Based in</strong> &nbsp;Foxrock, South County Dublin. I meet clients in person.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var f=document.getElementById('enqForm'),d=document.getElementById('enqDone'),e=document.getElementById('enqError');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();e.style.display='none';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){if(r.ok){f.style.display='none';d.classList.add('show');}else{e.style.display='block';}})
+      .catch(function(){e.style.display='block';});
+  });
+})();
+</script>
 </main>
 
 <footer class="footer">
